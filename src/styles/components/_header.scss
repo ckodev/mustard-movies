@@ -19,4 +19,11 @@ header {
         padding: 1rem;
         font-size: 1.5rem;
     }
+
+    .header-logo {
+        text-decoration: none;
+        list-style: none;
+        color: $yellow
+
+    }
 }
