@@ -7,7 +7,7 @@
     margin: 30px auto;
     border: 1px solid $yellow;
     border-radius: 5px;
-    padding: 20px;
+    padding: .5rem;
 
     .single-movie-poster,
     .single-movie-container {
@@ -17,6 +17,18 @@
 
     img {
         width: 100%;
+    }
+
+    .single-movie-info {
+        .release-date {
+            font-style: italic;
+        }
+    }
+
+    .overview {
+        padding-top: 1rem;
+    
+        
     }
 
     .single-movie-backdrop {

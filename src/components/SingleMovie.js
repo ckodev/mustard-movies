@@ -8,7 +8,7 @@ import { format } from 'date-fns';
 
 function SingleMovie({movie, isFav}) {
 
-//   console.log('this is from SingleMovie isFave test',isFav);
+
   const dispatch = useDispatch();
 
   function handleFavClick(addToFav, obj){
@@ -22,9 +22,6 @@ function SingleMovie({movie, isFav}) {
 
 const date = new Date(movie.release_date);
 const formattedDate = format(date, "MMMM do, yyyy");
-
-// const date = new Date(movie.release_date);
-// const formattedDate = format(date, "MMMM do, yyyy");
 
 
   return (
@@ -44,8 +41,8 @@ const formattedDate = format(date, "MMMM do, yyyy");
 
         <div className="single-movie-info">
             <h2>{movie.title}</h2>
-            <p className='release-date'>{formattedDate}</p>
-            <p>{movie.overview}</p>
+            <p className="release-date">{formattedDate}</p>
+            <p className='overview'>{movie.overview}</p>
         </div>
 
         <div className='fav-btn'>
