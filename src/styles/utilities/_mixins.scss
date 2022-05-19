@@ -1,0 +1,16 @@
+@use '../base/variables' as *;
+
+
+
+@mixin mobileNormalQuery {
+    @media (min-width: 375px) { @content; }
+}
+@mixin tabletQuery {
+    @media (min-width: 600px) { @content; }
+}
+@mixin desktopQuery {
+    @media (min-width: 850px) { @content; }
+}
+@mixin desktopLargeQuery {
+    @media (min-width: 1024px) { @content; }
+}

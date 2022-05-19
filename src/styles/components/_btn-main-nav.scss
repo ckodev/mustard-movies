@@ -1,0 +1,37 @@
+@use '../base/variables' as *;
+
+
+.btn-main-nav {
+    // display: none;
+    padding: .7rem;
+    border: none;
+    background: none;
+
+    @include desktopQuery {
+        display: none;
+    }
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    .line {
+        width: 35px;
+        height: 2px;
+        background-color: $yellow;
+        display: block;
+        margin: 8px auto;
+        transition: all 0.3s ease-in-out;
+
+        .show &:nth-child(2){
+            width: 0;
+        }
+        .show &:nth-child(1){
+            transform: translateY(10px) rotate(45deg)
+        }
+        .show &:nth-child(3){
+            transform: translateY(-10px) rotate(-45deg)
+        }
+    }  
+}
+

@@ -1,0 +1,22 @@
+@use '../base/variables' as *;
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: $black;
+    color: $yellow;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 8888;
+    width: 100%;
+    margin-top: 0;
+    max-width: 1024px;
+    
+    h1 {
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+}
