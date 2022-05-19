@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import Nav from './Nav';
+import {NavLink} from 'react-router-dom';
 
 function Header() {
 
@@ -54,7 +55,9 @@ function Header() {
 
   return (
     <header>
-        <h1>Mustard Movies</h1>
+
+        <NavLink className='header-logo' to="/sort/now_playing"><h1 >Mustard Movies</h1></NavLink>
+        
 
             <button className="btn-main-nav" 
                 onMouseDown={(e) => { e.preventDefault(); }}
