@@ -45,7 +45,7 @@ const formattedDate = format(date, "MMMM do, yyyy");
             <p className="release-date">{formattedDate}</p>
             <p className='overview'>{movie.overview}</p>
             
-            <p className='runtime'>{Math.floor(movie.runtime / 60)} hours {movie.runtime % 60} minutes</p>
+            {movie.runtime > 120 ? <p className='runtime'>{Math.floor(movie.runtime / 60)} hours {movie.runtime % 60} minutes</p> : <p className='runtime'>{Math.floor(movie.runtime / 60)} hour {movie.runtime % 60} minutes</p>}
         </div>
 
         <div className='fav-btn'>
