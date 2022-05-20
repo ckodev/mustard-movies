@@ -16,10 +16,11 @@ function SingleMovie({movie, isFav}) {
         dispatch(favourite(obj));
     }else{
         dispatch(unFavourite(obj));
-    }   
+    }  
+     
 }
 
-
+console.log(movie.id)
 const date = new Date(movie.release_date);
 const formattedDate = format(date, "MMMM do, yyyy");
 
@@ -43,6 +44,8 @@ const formattedDate = format(date, "MMMM do, yyyy");
             <h2>{movie.title}</h2>
             <p className="release-date">{formattedDate}</p>
             <p className='overview'>{movie.overview}</p>
+            
+            <p className='runtime'>{Math.floor(movie.runtime / 60)} hours {movie.runtime % 60} minutes</p>
         </div>
 
         <div className='fav-btn'>

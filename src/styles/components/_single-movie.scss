@@ -20,13 +20,22 @@
     }
 
     .single-movie-info {
+
+        display: flex;
+        flex-direction: column;
         .release-date {
-            font-style: italic;
+            // font-style: italic;
+            font-family: $grapeNuts;
+        }
+        .runtime {
+            margin-top: auto;
+            font-family: $grapeNuts;
         }
     }
 
     .overview {
         padding-top: 1rem;
+        // font-family: $roboto;
     
         
     }
