@@ -8,6 +8,10 @@
     left: 0;
     width: 100%;
     box-shadow: 0px -2px 15px rgb($yellow, 0.2);
+
+    @include desktopQuery {
+        box-shadow: none;
+    }
     
 
     @include desktopQuery {
