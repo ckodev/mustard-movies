@@ -20,7 +20,7 @@ function SingleMovie({movie, isFav}) {
      
 }
 
-console.log(movie.id)
+
 const date = new Date(movie.release_date);
 const formattedDate = format(date, "MMMM do, yyyy");
 

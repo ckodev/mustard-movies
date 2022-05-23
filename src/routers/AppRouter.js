@@ -24,6 +24,7 @@ function AppRouter() {
                 <Route path='/sort/now_playing' element={<PageHome sort="now_playing" />}/>
                 <Route path='/sort/upcoming' element={<PageHome sort="upcoming" />}/>
                 <Route path='movie/:id' element={<PageSingleMovie/>}/>
+                <Route path='movie/:query' element={<PageSingleMovie/>}/>
                 <Route path='/PageFavourites' element={<PageFavourites/>}/>
                 <Route path='/PageContact' element={<PageContact/>}/>
         

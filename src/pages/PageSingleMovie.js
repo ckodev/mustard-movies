@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import { API_KEY } from '../globals/Globals';
 import SingleMovie from '../components/SingleMovie';
 import isFav from '../utilities/isFav';
-import { useSelector } from 'react-redux';
 
 
 
@@ -16,7 +16,7 @@ function PageSingleMovie() {
 
     const { id } = useParams();
     const [movieData, setMovieData] = useState(false);
-    console.log(id);
+    
     
 
 useEffect(()=>{

@@ -1,0 +1,105 @@
+@use '../base/variables' as *;
+
+
+
+
+
+
+.search {
+  position: relative;
+  z-index: 99;
+  width: 75%;
+  margin: auto;
+
+  @include tabletQuery {
+    width: 120%;
+  }
+
+}
+
+.search-inputs {
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .search input {
+    color: $yellow;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .search-icon {
+  
+    background-color: none;
+ 
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  .search-icon svg {
+    fill: $yellow;
+    // font-size: 35px;
+  }
+  
+  .data-result {
+    position: absolute;
+    height: 200px;
+    background-color: white;
+    border-radius: 3px;
+    padding: .25rem;
+    overflow: hidden;
+    overflow-y: auto;
+    background-color: $yellow;
+    box-shadow: 0 0 0 1px $black, 0 0 0 4px $yellow,0 0 0 5px $black ;
+
+
+
+    p {
+      padding: .25rem;
+      width: 100%;
+      color: $black;
+      border-radius: 3px;
+      margin-top: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      align-self: start;
+    }
+    a:hover p {
+      background-color: $black;
+      color: $yellow;
+    }
+  }
+  
+  .data-result::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .data-result .data-item {
+    width: 100%;
+    // height: 50px;
+    display: flex;
+    align-items: center;
+    color: black;
+
+    img {
+      margin-top: 10px;
+      margin-left: 5px;
+      margin-right: 5px;
+      width:15%;
+      border-radius: 1px;
+      box-shadow: 0 0 0 1px $black, 0 0 0 2px $yellow,0 0 0 3px $black ;
+      
+    }
+  }
+  
+
+  #clearBtn {
+    cursor: pointer;
+  }
+
+
+  
