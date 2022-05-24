@@ -15,12 +15,23 @@
         color: $yellow;
     }
 
+
+
    
 }
 
 .favourites-heading {
     text-align: center;
     padding: 0 0 2rem 0 ;
+
+
+    @include desktopQuery {
+        align-self: flex-start;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 105px;
+    }
+   
 }
 
 .no-favs-p {

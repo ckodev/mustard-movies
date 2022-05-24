@@ -5,6 +5,7 @@ import { appTitle } from '../globals/Globals';
 import { Link } from 'react-router-dom';
 import MovieCard from '../components/MovieCard';
 import {ReactComponent as ReactLogo} from '../images/mustard-logo.svg'
+import {NavLink} from 'react-router-dom';
 
 
 
@@ -44,9 +45,11 @@ function PageFavourites() {
   </section>
   }
 
-  <div className='logo'>
-    <ReactLogo/>
-  </div>
+    <NavLink to="/sort/now_playing">
+      <div className='logo'>
+        <ReactLogo/>
+      </div>
+    </NavLink>
 </main>
   )
 }

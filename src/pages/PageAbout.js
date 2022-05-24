@@ -1,5 +1,6 @@
 import React from 'react'
 import {ReactComponent as ReactLogo} from '../images/mustard-logo.svg'
+import {NavLink} from 'react-router-dom';
 
 function PageAbout() {
   return (
@@ -13,9 +14,11 @@ function PageAbout() {
       
           <p>- M.M. </p> 
     </div>
-    <div className='logo' >
-      <ReactLogo/>
+    <NavLink to="/sort/now_playing">
+    <div className='logo'>
+    <ReactLogo/>
     </div>
+    </NavLink>
     </>
   )
 }

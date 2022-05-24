@@ -3,6 +3,8 @@ import { API_KEY } from "../globals/Globals";
 import { useEffect, useState } from "react";
 import NavSort from "../components/NavSort";
 import {ReactComponent as ReactLogo} from '../images/mustard-logo.svg'
+import {NavLink} from 'react-router-dom';
+
 
 function PageHome({ sort }) {
   const [moviesData, setMoviesData] = useState(false);
@@ -37,6 +39,7 @@ function PageHome({ sort }) {
   }, [sort]);
 
   return (
+    <>
     <section className="home-page">
       <NavSort />
       
@@ -45,6 +48,13 @@ function PageHome({ sort }) {
         {moviesData !== false && <Movies moviesData={moviesData} />}
       </div>
     </section>
+    <NavLink to="/sort/now_playing">
+    <div className='logo'>
+    <ReactLogo/>
+    </div>
+    </NavLink>
+   
+    </>
   );
 }
 
