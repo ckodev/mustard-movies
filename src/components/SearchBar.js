@@ -58,6 +58,12 @@ function clearInput() {
     setFilteredData([]);
     setSearchInput("");
 }
+
+function clearInputNav() {
+    setFilteredData([]);
+    setSearchInput("");
+    this.forceUpdate();
+}
     
 //  console.log(movieData)
  console.log(searchInput)
@@ -74,7 +80,7 @@ function clearInput() {
         {filteredData.length != 0 && (
         <div className="data-result">
             {filteredData.slice(0,15).map((value) => {
-                return <NavLink className='data-item' onClick={clearInput} key={value.title} to={`/movie/${value.id}`}>
+                return <NavLink className='data-item' onClick={clearInputNav} key={value.title} to={`/movie/${value.id}`}>
                         {value.poster_path === null ?
                         <img src={noPoster} alt="no poster available"/> :
                         <img src={`https://image.tmdb.org/t/p/w500/${value.poster_path}`} alt={value.title}/> }

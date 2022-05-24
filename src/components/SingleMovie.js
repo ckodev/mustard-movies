@@ -6,7 +6,8 @@ import { favourite, unFavourite } from "../features/favSlice";
 import { format } from 'date-fns';
 
 
-function SingleMovie({movie, isFav}) {
+
+function SingleMovie({movie, isFav, cast}) {
 
 
   const dispatch = useDispatch();
@@ -19,6 +20,7 @@ function SingleMovie({movie, isFav}) {
     }  
      
 }
+
 
 
 const date = new Date(movie.release_date);
@@ -44,7 +46,9 @@ const formattedDate = format(date, "MMMM do, yyyy");
             <h2>{movie.title}</h2>
             <p className="release-date">{formattedDate}</p>
             <p className='overview'>{movie.overview}</p>
-            
+            <br></br>
+            <p>Cast: {cast.cast[0].name}, {cast.cast[1].name}, {cast.cast[2].name}, {cast.cast[3].name}, {cast.cast[4].name}, {cast.cast[5].name}, {cast.cast[6].name}</p>
+                        
             {movie.runtime > 120 ? <p className='runtime'>{Math.floor(movie.runtime / 60)} hours {movie.runtime % 60} minutes</p> : <p className='runtime'>{Math.floor(movie.runtime / 60)} hour {movie.runtime % 60} minutes</p>}
         </div>
 
