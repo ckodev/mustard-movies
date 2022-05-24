@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from '../components/Header';
 import PageHome from '../pages/PageHome';
 import PageFavourites from '../pages/PageFavourites';
-import PageContact from '../pages/PageContact';
+import PageAbout from '../pages/PageAbout';
 import PageSingleMovie from '../pages/PageSingleMovie';
 
 
@@ -26,7 +26,7 @@ function AppRouter() {
                 <Route path='movie/:id' element={<PageSingleMovie/>}/>
                 <Route path='movie/:query' element={<PageSingleMovie/>}/>
                 <Route path='/PageFavourites' element={<PageFavourites/>}/>
-                <Route path='/PageContact' element={<PageContact/>}/>
+                <Route path='/PageAbout' element={<PageAbout/>}/>
         
             </Routes>
         </div>

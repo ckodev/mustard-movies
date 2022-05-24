@@ -19,7 +19,7 @@ function Nav({showHideNav}) {
         <ul>
             <li><NavLink to="/sort/now_playing">Home</NavLink></li>
             <li><NavLink to="/PageFavourites">Favourites</NavLink></li>
-            <li><NavLink to="/PageContact">Contact</NavLink></li>
+            <li><NavLink to="/PageAbout">Contact</NavLink></li>
         </ul>
     </nav>
   )

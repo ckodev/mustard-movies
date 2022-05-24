@@ -1,6 +1,6 @@
 import React from 'react'
 
-function PageContact() {
+function PageAbout() {
   return (
     <div className='home-page'>
         <h1>This the Contact page!</h1>
@@ -9,4 +9,4 @@ function PageContact() {
   )
 }
 
-export default PageContact
+export default PageAbout

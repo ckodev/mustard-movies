@@ -47,7 +47,6 @@ const formattedDate = format(date, "MMMM do, yyyy");
             <p className="release-date">{formattedDate}</p>
             <p className='overview'>{movie.overview}</p>
             <br></br>
-            {/* <p>Cast: {cast.cast[0].name}, {cast.cast[1].name}, {cast.cast[2].name}, {cast.cast[3].name}, {cast.cast[4].name}, {cast.cast[5].name}, {cast.cast[6].name}</p> */}
             <h2>Cast:</h2>
             {cast.cast.slice(0,6).map(cast => <p>{cast.name}</p>)}
            
