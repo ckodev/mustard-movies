@@ -30,6 +30,10 @@
     padding: 2rem;
     margin-bottom: 3rem;
 
+    @include desktopQuery {
+        margin-bottom: 0;
+    }
+
     svg {
         fill: $yellow;
         width: 5rem;

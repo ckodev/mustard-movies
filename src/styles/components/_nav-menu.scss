@@ -49,9 +49,19 @@ nav {
             border-bottom: 1px solid white;
             width: 100%;
             padding: .5rem;
+
+            &:hover {
+                background-color: $yellow;
+                a {
+                    color: $black;   
+                }
+                color: $black;
+            }
             
             a {
                 font-size: .9rem;
+
+               
             }
 
             @include desktopQuery {
