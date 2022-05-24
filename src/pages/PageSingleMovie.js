@@ -49,7 +49,7 @@ useEffect(()=>{
 
   return (
     <section className='single-movie-container' >
-        {movieData !== false && <SingleMovie movie={movieData} cast={movieCast} isFav={isFav(favs, null, id)} />}
+        {movieData !== false && movieCast !== false && <SingleMovie movie={movieData} cast={movieCast} isFav={isFav(favs, null, id)} />}
         
     </section>
   )
