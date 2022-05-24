@@ -2,6 +2,7 @@ import Movies from "../components/Movies";
 import { API_KEY } from "../globals/Globals";
 import { useEffect, useState } from "react";
 import NavSort from "../components/NavSort";
+import {ReactComponent as ReactLogo} from '../images/mustard-logo.svg'
 
 function PageHome({ sort }) {
   const [moviesData, setMoviesData] = useState(false);
@@ -38,6 +39,7 @@ function PageHome({ sort }) {
   return (
     <section className="home-page">
       <NavSort />
+      
       <div className="movies-container-container">
         {error !== false && <p className="api-error">{error}</p>}
         {moviesData !== false && <Movies moviesData={moviesData} />}

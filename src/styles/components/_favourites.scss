@@ -1,4 +1,22 @@
+@use '../base/variables' as *;
 
+.favs-page {
+    display: block;
+    border: 2px solid $yellow;
+    border-radius: 5px;
+    max-width: 40rem;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    width: 85%;
+
+    .home-link {
+        color: $yellow;
+    }
+
+   
+}
 
 .favourites-heading {
     text-align: center;

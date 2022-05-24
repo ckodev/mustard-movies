@@ -2,7 +2,7 @@
 import {NavLink} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFilm, faFire, faList, faStar, faTheaterMasks } from '@fortawesome/free-solid-svg-icons';
-import {useState} from 'react';
+import {ReactComponent as ReactLogo} from '../images/mustard-logo.svg'
 
 
 function NavSort() {
@@ -91,6 +91,7 @@ function showHideNav() {
                 </div>
             </li>
         </ul>
+        
     </nav>
   )
 }

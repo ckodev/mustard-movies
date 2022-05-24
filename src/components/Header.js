@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import Nav from './Nav';
 import {NavLink} from 'react-router-dom';
 import SearchBar from './SearchBar';
+import {ReactComponent as ReactLogo} from '../images/mustard-logo.svg'
 
 
 function Header() {
@@ -43,14 +44,11 @@ function Header() {
       }
     }
   },[])
-  // fetch API data here...
-  //const favs = useSelector((state) => state.favs.items);
-  //const  filteredData  = useParams();
  
   return (
     <header>
         <div className="header-box">
-          <NavLink className='header-logo' to="/sort/now_playing"><h1 >Mustard Movies</h1></NavLink>
+          <NavLink className='header-logo' to="/sort/now_playing"><h1>Mustard Movies</h1></NavLink>
               <div className="desktop-show-search">
                 <SearchBar placeholder='search' />
               </div>
