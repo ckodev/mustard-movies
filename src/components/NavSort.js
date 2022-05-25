@@ -36,7 +36,7 @@ function showHideNav() {
         <ul>
              <li>
                 <NavLink to="/sort/now_playing" >
-                   {window.location.pathname === "/sort/now_playing" || 
+                   {window.location.pathname === "/mustard-movies/sort/now_playing" || 
                     window.location.pathname === "/" ? <div className='li-container highlight'>
                         <FontAwesomeIcon className='icon' icon={faTheaterMasks}  />
                         <p className='now-playing'>Now Playing</p>
@@ -49,7 +49,7 @@ function showHideNav() {
             </li>
             <li>
                 <NavLink to="/sort/popular" >
-                   {window.location.pathname !== "/sort/popular" ?  <div className='li-container'>
+                   {window.location.pathname !== "/mustard-movies/sort/popular" ?  <div className='li-container'>
                         <FontAwesomeIcon className='icon ' icon={faFire}  />
                         <p className='popular'>Popular</p>
                     </div> :
@@ -62,7 +62,7 @@ function showHideNav() {
             </li>
             <li>
                 <NavLink to="/sort/top_rated" >
-                    {window.location.pathname !== "/sort/top_rated" ? <div className='li-container'>
+                    {window.location.pathname !== "/mustard-movies/sort/top_rated" ? <div className='li-container'>
                         <FontAwesomeIcon className='icon' icon={faStar} />
                         <p className='top-rated'>Top Rated</p>
                     </div> : <div className='li-container highlight'>
@@ -74,7 +74,7 @@ function showHideNav() {
             
             <li>
                 <NavLink  to="/sort/upcoming" >
-                   {window.location.pathname !== "/sort/upcoming" ?  <div className='li-container'>
+                   {window.location.pathname !== "/mustard-movies/sort/upcoming" ?  <div className='li-container'>
                         <FontAwesomeIcon className='icon' icon={faFilm} />
                         <p className='upcoming'>Upcoming</p>
                     </div> :

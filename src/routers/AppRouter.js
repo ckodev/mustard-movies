@@ -13,7 +13,7 @@ import PageSingleMovie from '../pages/PageSingleMovie';
 
 function AppRouter() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='mustard-movies'>
         <div className='wrapper'>
             <Header />
             <Routes>

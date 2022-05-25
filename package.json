@@ -1,5 +1,7 @@
 {
+  
   "name": "movie-app",
+  "homepage": "/mustard-movies",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
